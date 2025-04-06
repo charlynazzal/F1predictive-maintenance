@@ -333,7 +333,7 @@ class PredictiveMaintenanceSystem:
             anomaly_indices = np.where(anomaly_flags == 1)[0]
             if len(anomaly_indices) > 0:
                  # Map anomaly_indices back to the time axis
-                 anom_timestamps = anom_time_axis.iloc[anomaly_indices]
+                 anom_timestamps = anom_time_axis[anomaly_indices]
                  ax2.scatter(anom_timestamps, failure_probs[anomaly_indices] if failure_probs is not None and len(failure_probs) == len(anomaly_flags) else [0.95] * len(anomaly_indices),
                              color='orange', marker='o', s=50, label='Anomalies', zorder=5) # zorder to draw on top
 
