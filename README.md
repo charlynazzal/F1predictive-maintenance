@@ -41,9 +41,24 @@ A web-based dashboard built with Streamlit provides:
 
 ### Installation
 
-1. Clone this repository
-2. Install dependencies:
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/charlynazzal/F1predictive-maintenance.git
+   cd F1predictive-maintenance
    ```
+
+2. **Recommended:** Create and activate a virtual environment (e.g., using Python 3.10 or 3.11):
+   ```bash
+   # Example using Python 3.10
+   py -3.10 -m venv .venv
+   # On Windows
+   .venv\Scripts\activate
+   # On macOS/Linux
+   # source .venv/bin/activate
+   ```
+
+3. Install dependencies from the requirements file:
+   ```bash
    pip install -r requirements.txt
    ```
 
